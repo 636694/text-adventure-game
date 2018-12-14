@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0">
+<script>window.version="UNKNOWN"</script>
+
+<script src="../persist.js"></script>
+<script src="../alertify.min.js"></script>
+<script src="../util.js"></script>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<style id="dynamic"></style>
+<script src="../ui.js"></script>
+<script src="../scene.js"></script>
+<script src="../navigator.js"></script>
+<script src="mygame.js"></script>
+<link href="../alertify.css" rel="stylesheet" type="text/css">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script>
+var rootDir = "../";
+</script>
+</head>
+<body><div class="container" id="container1">
+</div>
+<div id="header">
+
+  <h1 class="gameTitle">Test Game</h1>
+<h2 id="author" class="gameTitle">by Emily</h2>
+
+  <p id="headerLinks">
+    </p>
+  <p id="buttons">
+    <button id="statsButton" class="spacedLink" onclick="showStats()">Show Stats</button>
+    <button id="restartButton" class="spacedLink" onclick="restartGame('prompt')">Restart</button>
+    <button id="achievementsButton" onclick="showAchievements()" class="spacedLink" style="display: none">Achievements</button>
+  </p>
+</div>
+<div id="main">
+<div id="text">
+</div>
+<script>
+startLoading();
+</script>
+</div>
+<div id="mobileLinks" class="webOnly">
+</div>
+<noscript>
+<p>This game requires JavaScript; please enable JavaScript and refresh this page.</p>
+</noscript>
+</body>
+</html>

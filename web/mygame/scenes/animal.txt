@@ -1,0 +1,13 @@
+
+
+What kind of animal will you be?
+*choice
+  #Lion
+    *goto claws
+  #Tiger
+    *label claws
+    In that case, you'll have powerful claws and a mighty roar!
+    *finish
+  #Elephant
+    Well, elephants are interesting animals, too.
+    *finish

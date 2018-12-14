@@ -1,0 +1,4 @@
+
+You have died.
+
+*goto_scene ending

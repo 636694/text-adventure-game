@@ -1,0 +1,29 @@
+
+
+*set leadership 10
+*set strength 10
+
+What do you prefer?
+*choice
+  #Leadership
+    *set leadership +10
+    *goto action
+  #Strength
+    *set strength +10
+
+*label action
+What will you do today?
+*choice
+  #Run for class president
+    *if leadership > 15
+      You win the election.
+      *finish
+    You lose the election.
+    *finish
+  #Lift weights
+    *if strength > 15
+      You lift the weights.
+      *finish
+    You drop the weights and hurt yourself badly.  You never recover.
+    
+    *goto_scene death
